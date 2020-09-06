@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
+
+
 body {
 	font-family: "Titillium Web";
 	overflow-x: hidden;
@@ -640,4 +642,300 @@ footer {
 			}
 		}
 	}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+	header {
+
+		.container {
+
+			.header-container {
+				min-width: 900px;
+				height: 550px;
+			}
+		}
+	}
+
+	.header__menu {
+		height: 40px;
+		padding: 0;
+		margin: 35px 0 0 0;
+
+		.logo img {
+			width: 120px; 
+		}
+
+		nav {
+			width: 470px;
+
+			.nav__items {
+
+				a {
+					width: 90px;
+					height: 30px;
+				}	
+			}
+		}
+	}
+
+	.header__textGreeting {
+		margin: 120px 0 0 0;
+		
+		 p {
+		 	font-size: 34px;
+			line-height: 40px;
+		} 
+	}
+
+	.header__button a {
+		height: 60px;
+		width: 250px;
+	}
+
+	//HEADER
+
+	//MAIN
+	main {
+
+		.title {
+
+			h2 {
+			font-size: 38px;
+			line-height: 25px;
+			letter-spacing: 3px;
+			}
+		}
+
+		.subtitle {
+			font-size: 16px;
+		}
+	}
+
+	.ourServices{
+		flex: 0 0 600px;
+	}	
+
+	.ourServices__itemsContainer {
+		width: 850px;
+		margin: 60px 0 0 0;
+		height: 275px;
+
+
+		.ourServices__items {
+			
+
+			.ourServices__items-pic {
+				flex: 0 0 52%;
+
+				img {
+					width: 190px;
+				}
+			}
+
+			.ourServices__items-subtitle {
+				font-size: 15px;
+				line-height: 22px;
+			}
+		}
+	}
+
+	.ourTeam {
+		flex: 0 0 800px;	
+	}
+
+	.ourTeam__subtitle {
+		width: 675px;
+	}
+
+	.ourTeam__items {
+		width: 850px;
+		margin: 40px 0 0 0;
+
+		.ourTeam__worker {
+			width: 190px;
+			height: 475px;
+
+			.ourTeam__worker-photo{
+				height: 180px;
+				width: 180px;
+
+
+				img {
+					width: 180px;
+				}
+			}
+
+			.ourTeam__worker-name {
+				font-size: 22px;
+
+				p {
+					font-size: 14px;
+				}
+			}
+
+			.ourTeam__worker-about {
+				font-size: 15px;
+			}
+		}
+	}
+
+	.ourSkills {
+		flex: 0 0 550px;
+	}
+
+	.ourSkills__items {
+		margin: 55px 0 0 0;
+		width: 850px;
+		height: 230px;
+
+		.ourSkills__items-element {		
+
+			.ourSkills__persents img {				
+				width: 180px;
+			}
+
+			.ourSkills__name {
+				font-size: 22px;
+				line-height: 18px;
+			}
+			
+		}
+
+	}
+
+	.ourPortfolio {
+		flex: 0 0 1150px;
+	}
+
+	.ourPortfolio__nav {
+		margin: 40px 0 40px 0;
+		width: 380px;
+
+		.ourPortfolio__nav-items a {
+			width: 85px;
+		}
+	}
+
+	.ourPortfolio__items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 850px;
+		height: 600px;
+	}
+
+	.ourPortfolio__items-container {
+		width: 400px;
+		height: 265px;
+
+		.ourPortfolio__items-img img {
+			width: 400px;
+		}
+
+		.ourPortfolio__items-name {
+			font-size: 17px;
+		}
+	}
+
+	.ourPortfolio__more-btn {
+		margin: 40px 0 0 0;
+		height: 60px;
+		width: 250px;
+
+	}
+
+	.reviews {
+		flex: 0 0 700px;
+
+		.reviews__subtitle {
+			margin: 0 0 -40px 0;
+		}
+	}
+
+	.reviews__items {
+		width: 850px;
+
+		.reviews__items-container {
+			width: 400px;
+			margin: 80px 0 0 0;
+
+
+			.reviews__items-photo {
+				width: 80px;
+				height: 80px;
+
+				img {
+					width: 80px;
+					height: 80px;
+				}
+			}
+
+			.reviews__items-rew {
+				width: 310px;
+
+				.reviews__items-text {
+					flex: 0 0 110px;
+					font-size: 19px;
+					line-height: 28px;
+				}
+
+				.reviews__items-username {
+					letter-spacing: 0.48px;
+					font-size: 22px;
+					line-height: 24px;
+				}
+
+				.reviews__items-userPos {
+					letter-spacing: 0.36px;
+					font-size: 16px;
+					line-height: 23px;
+				}
+			}
+		}
+	}
+
+	.conection {
+		flex: 0 0 700px;
+	}
+
+	.connection__form {
+		margin: 40px 0 0 0;
+		width: 850px;
+		input {
+			padding: 0 10px;
+			width: 400px;
+			font-size: 22px;
+	    	line-height: 22px;
+		}
+
+		textarea {
+			margin: 25px 0 0 0;
+			padding: 10px;
+			width: 850px;
+			height: 190px;
+			font-size: 22px;
+	    	line-height: 24px;
+		}
+
+		.submit {
+			margin: 40px auto 0;
+			height: 60px;
+			width: 250px;
+		}
+	}
+
+	footer {
+		padding: 22px 0 0 0;
+		height: 70px;
+		.footer__container {
+			width: 850px;
+
+			.footer__social a{
+				letter-spacing: 0;
+				font-size: 22px;
+			}
+		}
+	}
+
 }
