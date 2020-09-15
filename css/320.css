@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 body {
   font-family: "Titillium Web";
+  transition: all 0.3s linear;
 }
 
 body.lock {
@@ -18,30 +19,37 @@ header .container .header-container {
   height: 100%;
 }
 
+.logo img {
+  height: 30px;
+  margin: 10px 0 0 0;
+}
+
 .container-menu {
   position: relative;
   padding: 20px;
 }
 
-.logo {
-  height: 25px;
+.nav-menu800 {
+  display: none;
 }
 
-.logo-menu {
+.logo-menu img {
   position: relative;
+  height: 30px;
   left: 30px;
   top: 30px;
 }
 
 .nav-btn {
-  z-index: 0;
+  z-index: 1;
   position: absolute;
   display: block;
   cursor: pointer;
+  top: 0;
   height: 25px;
-  right: 30px;
-  margin: 0 -4% 0 0;
-  top: 50%;
+  width: 30px;
+  right: 0;
+  margin: 35px 0 0 0;
 }
 
 .nav-btn span {
@@ -71,11 +79,11 @@ header .container .header-container {
 .nav-menu {
   position: fixed;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   left: -100vw;
   top: 0;
   background-color: #87509c;
-  transition: all 0.7s linear;
+  transition: all 0.3s linear;
   padding: 0 0 30px 0;
 }
 .nav-menu .nav-list {
@@ -100,19 +108,33 @@ header .container .header-container {
   align-items: center;
 }
 
-.nav-btn {
-  z-index: 2;
+.menu-header.active {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 0;
 }
 
-.logo-menu.active {
-  left: 30px;
+.nav-btn.active {
+  z-index: 5;
+  display: block;
+  cursor: pointer;
+  height: 25px;
+  width: 30px;
+  margin: 35px 40px 0 0;
+}
+
+.logo-menu.active img {
+  height: 30px;
+  left: 40px;
   top: 30px;
   z-index: 2;
 }
 
 .nav-menu.active {
+  position: fixed;
+  z-index: 5;
   left: 0;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .header__textGreeting {
@@ -122,7 +144,6 @@ header .container .header-container {
 .header__textGreeting p {
   color: #f7f3ea;
   font-family: "Titillium Web";
-  font-size: calcFluidFontSize(10, 20, 64, 321);
   font-size: 1.2em;
   font-weight: 700;
   line-height: 1.2em;
@@ -187,7 +208,6 @@ main .subtitle {
 
 .ourServices__itemsContainer {
   margin: 5% 0 0 0;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,6 +215,7 @@ main .subtitle {
 }
 .ourServices__itemsContainer .ourServices__items {
   background-color: #17B196;
+  width: 100%;
   border-radius: 1em;
   text-align: center;
   margin: 5% 0;
@@ -254,7 +275,6 @@ main .subtitle {
   flex-direction: column;
   align-items: center;
   border-radius: 1em;
-  transition: background-color 0.4s linear;
 }
 .ourTeam__items .ourTeam__worker .ourTeam__worker-photo {
   height: 5em;
@@ -465,7 +485,7 @@ main .subtitle {
   height: 4.8em;
   border-radius: 50%;
 }
-.reviews__items .reviews__items-container .reviews__items-rew .reviews__items-text {
+.reviews__items .reviews__items-container .reviews__items-rew .reviews__items-text p {
   text-align: center;
   font-style: italic;
   font-size: 1.2em;
@@ -511,7 +531,7 @@ main .subtitle {
   font-family: "Titillium Web";
 }
 .connection__form input {
-  max-width: 45%;
+  width: 100%;
   padding: 0 1em;
   width: 100%;
   height: 2.2em;
