@@ -395,7 +395,8 @@
 
 	.container-menu {
 		display: flex;
-		width: 80%;
+		width: 90%;
+		min-width: 1050px;
 		justify-content: space-between;
 
 
@@ -412,30 +413,32 @@
 		.nav-menu800 {
 			margin: 15px 0 0 0;
 			display: flex;
-			max-width: 550px;
-			width: 100%;
+			max-width: 60%;
 			height: 50px;
 
 			.nav-list {
-				flex: 0 1 100%;
 				margin: auto;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
 				
 
-				.nav-link a {
-					color: #fff;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					font-size: 17px;
-					font-weight: 400;
-					line-height: 18px;
-					text-transform: uppercase;
-					height: 40px;
-					width: 90px;
-					transition: background-color 0.4s linear;
+				.nav-link {
+
+					a {
+						color: #fff;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 1.3em;
+						font-weight: 400;
+						line-height: 18px;
+						text-transform: uppercase;
+						height: 40px;
+						min-width: 110px;
+						transition: background-color 0.4s linear;
+						margin-left: 15px;
+					}
 				}
 
 				.nav-link a:hover {
@@ -447,10 +450,11 @@
 
 	.header__textGreeting {
 		margin: -20px auto 0;
+		min-width: 1000px;
 	
 		 p {
 		 	color: #f7f3ea;
-			font-size: 2em;
+			font-size: 2.8em;
 			font-weight: 700;
 			line-height: 1.5em;
 			text-align: center;
@@ -481,7 +485,8 @@
 		.title {
 
 			h2 {
-				font-size: 36px;
+				font-size: 40px;
+				line-height: 30px;
 			}
 		}
 
@@ -492,45 +497,55 @@
 
 
 	.ourServices{
-		height: 1050px;
-		padding: 30px 0 0 0;
+		flex: 0 0 750px;
+		padding: 60px;
+
+		.ourServices__title {
+			margin-top: 65px;
+		}
 
 
 	}
 		
 
 	.ourServices__itemsContainer {
-		width: 95%;
-		padding: 25px;
-		height: 800px;
-		margin: 0;
+		min-width: 1050px;
+		width: 85%;
+		padding: 0;
+		height: 100%;
+		margin: 70px 0 0 0;
 		justify-content: space-around;
 		flex-direction: row;
 		display: flex;
-		flex-wrap: wrap;
 
 
 		.ourServices__items {
+			background-color: rgba(0, 0, 0, 0);
+			flex: 0 1 25%;
 			display: flex;
-			width: 40%;
-			height: 320px;
-			margin: 0;
-			padding: 5%;
+			min-width: 230px;
+			min-height: 300px;
+			height: 100%;
+			margin: 0 20px;
+			padding: 0 30px 10px;
 
 			.ourServices__items-pic {
-				flex: 0 0 auto;
+				flex: 0 0 50%;
 			}
 
 			.ourServices__items-pic img {
-				width: 80%;
+				width: 200px;
 			}
 
 			.ourServices__items-title {
+				flex: 0 0 15%;
 				font-size: 24px;
+				line-height: 24px;
 			}
 
 			.ourServices__items-subtitle {
-				font-size: 20px;
+				flex: 0 0 35%;
+				font-size: 16px;
 				line-height: 24px;
 				letter-spacing: 0.32px;
 			}
@@ -539,32 +554,35 @@
 
 
 	.ourTeam__items {
-		width:	100%;
-		padding: 25px;
-		height: 800px;
-		margin: 0;
+		height: 100%;
+		width: 80%;
+		min-width: 1000px;
+		padding: 0;
+		margin-top: 50px;
 		justify-content: space-around;
 		flex-direction: row;
 		display: flex;
-		flex-wrap: wrap;
 
 		.ourTeam__worker {
+			background-color: rgba(0, 0, 0, 0);
+			flex: 0 0 25%;
 			display: flex;
-			justify-content: center;
+			justify-content: space-between;
 			align-items: center;
-			width: 42%;
-			padding: 20px;
-			height: 48%;
+			width: 100%;
+			padding: 0;
+			min-height: 500px;
+			height: 100%;
 			margin: 0 15px;
 
 
 			.ourTeam__worker-photo{
-				height: 75px;
-				width: 75px;
+				height: 200px;
+				width: 200px;
 
 
 				img {
-					width: 75px;
+					width: 200px;
 					border-radius: 50%;
 				}
 			}
@@ -578,21 +596,22 @@
 		}
 
 		.ourSkills__items {
-			width: 89%;
-			padding: auto;
-			margin: 30px 0 0;
+			width: 100%;
+			min-width: 1050px;
+			padding: 0;
+			margin-top: 75px;
 			justify-content: space-around;
 			flex-direction: row;
 			display: flex;
-			flex-wrap: wrap;
 
 			.ourSkills__items-element {
 				display: flex;
 				justify-content: center;
 				align-items: center;;
 				padding: 0;
-				margin: 0 30px;
-				width: 250px;
+				margin: 0;
+				width: 220px;
+				height: 220px;
 			}
 		}
 
@@ -634,28 +653,29 @@
 
 
 		.ourPortfolio__items {
-			margin: 30px 0 0 0;
+			margin: 60px 0px;
 			padding: 0;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: center;
+			justify-content: space-betweeen;
+			width: 1100px;
+			min-height: 780px;
+			height: 100%;
 
 			.ourPortfolio__items-container {
-				margin: 40px 0;
-				width: 100%;
+				margin: 0;
+				width: 540px;
+				height: 340px;
 
 				.ourPortfolio__items-img img {
 					width: 100%;
-					max-width: 600px;
 				}
 
 				.ourPortfolio__items-name {
-					margin: 20px 0 0 0;
-					letter-spacing: 0.05em;
-					text-transform: uppercase;
-					font-size: 20px;
+					margin: 0;
+					font-size: 18px;
 					line-height: 19px;
-					text-align: center;
+					letter-spacing: 0.36px;
 				}
 			}
 		}
@@ -666,9 +686,95 @@
 			height: 70px;
 			width: 300px;
 			transition: background-color 0.25s linear;
+			margin: 0;
 		}
 
 	}
+
+
+	.reviews {
+		height: 900px;
+		padding: 0;
+		background-color: #D74680;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+
+	hr {
+		background-color: rgba( 0, 0, 0, 0.15);
+	}
+}
+
+.reviews__items {
+	margin-top: 50px;
+	width: 1100px;
+	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+
+	.reviews__items-container {
+		border-radius: 0;
+		padding: 0;
+		width: 700px;
+		height: 200px;
+		position: relative;
+		background-color: #A0345F;
+		display: flex;
+
+
+		.reviews__items-photo {
+			position: static;
+			width: 100px;
+			height: 100px;
+			margin: 0;
+			background-color: #808080;
+			border-radius: 0;
+
+			img {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			}
+		}
+
+		.reviews__items-rew {
+
+
+			.reviews__items-text p {
+				text-align: center;
+				font-style: italic;
+				font-size: 21px;
+				line-height: 31px;
+				letter-spacing: 0.35px;
+			}
+
+			.reviews__items-username {
+				margin: 0.7em 0;
+				width: 50%;
+				letter-spacing: 0.48px;
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 26px;
+			}
+
+			.reviews__items-userPos {
+				color: #fd9;
+				width: 50%;
+				letter-spacing: 0.36px;
+				font-size: 18px;
+				line-height: 26px;
+			}
+		}
+	}
+}
+
+
+
 
 	.connection__form {
 		input {
