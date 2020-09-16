@@ -349,6 +349,7 @@
 	}
 
 	footer {
+		padding: 50px;
 		.footer-icons{
 			display: none;
 		}
@@ -403,8 +404,8 @@
 
 	.container-menu {
 		display: flex;
-		width: 90%;
-		min-width: 1050px;
+		max-width: 1100px;
+		width: 100%;
 		justify-content: space-between;
 
 
@@ -421,7 +422,6 @@
 		.nav-menu800 {
 			margin: 15px 0 0 0;
 			display: flex;
-			max-width: 60%;
 			height: 50px;
 
 			.nav-list {
@@ -517,8 +517,8 @@
 		
 
 	.ourServices__itemsContainer {
-		min-width: 1050px;
-		width: 85%;
+		max-width: 110px;
+		width: 100%;
 		padding: 0;
 		height: 100%;
 		margin: 70px 0 0 0;
@@ -563,8 +563,8 @@
 
 	.ourTeam__items {
 		height: 100%;
-		width: 80%;
-		min-width: 1000px;
+		width: 100%;
+		max-width: 1100px;
 		padding: 0;
 		margin-top: 50px;
 		justify-content: space-around;
@@ -600,12 +600,13 @@
 	.ourSkills {
 
 		.ourSkills__subtitle {
-			width: 700px;
+			width: 100%;
+			max-width: 700px;
 		}
 
 		.ourSkills__items {
+			max-width: 1100px;
 			width: 100%;
-			min-width: 1050px;
 			padding: 0;
 			margin-top: 75px;
 			justify-content: space-around;
@@ -797,6 +798,8 @@
 
 
 	.connection__form {
+		width: 100%;
+		max-width: 1100px;
 		input {
 			overflow: scroll;
 			padding: 0 10px;
@@ -835,7 +838,7 @@
 }
 
 	footer {
-		width: 100%;
+		padding: 50px;
 
 		.footer-icons{
 			display: none;
